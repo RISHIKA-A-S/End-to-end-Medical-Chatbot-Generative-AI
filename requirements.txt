@@ -6,6 +6,8 @@ python-dotenv
 pinecone[grpc]
 langchain-pinecone
 langchain_community
-langchain_openai
+# Remove langchain_openai if you no longer use OpenAI
+# langchain_openai
 langchain_experimental
+anthropic  # Add Anthropic official python client for Anthropic LLM usage
 -e .
