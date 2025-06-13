@@ -1,4 +1,4 @@
-sentence-transformers==2.2.2
+# sentence-transformers==2.2.2
 langchain
 flask
 pypdf
@@ -6,8 +6,8 @@ python-dotenv
 pinecone[grpc]
 langchain-pinecone
 langchain_community
-# Remove langchain_openai if you no longer use OpenAI
+# Remove langchain_openai
 # langchain_openai
 langchain_experimental
-anthropic  # Add Anthropic official python client for Anthropic LLM usage
+langchain_core
 -e .
