@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from src.helper import download_hugging_face_embeddings
 from langchain_pinecone import PineconeVectorStore
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.prompts import ChatPromptTemplate
@@ -38,7 +38,8 @@ docsearch = PineconeVectorStore.from_existing_index(
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k": 3})
 
 # Load LLM
-llm = Ollama(model="llama2")
+llm = OllamaLLM(model="llama2")
+
 
 # Prompt
 prompt = ChatPromptTemplate.from_messages([
@@ -59,6 +60,14 @@ def index():
 def chat():
     msg = request.form["msg"]
     print("User Input:", msg)
+
+    #check for greeting
+    if msg.lower().strip() in ["hi", "hello", "hey", "hii", "heyy", "hai"]:
+        greeting = "👋 Hello! I'm your medical assistant. Ask me any health-related question."
+        print("Response:", greeting)
+        return greeting
+
+    # Process with RAG chain
     response = rag_chain.invoke({"input": msg})
     print("Response:", response["answer"])
     return str(response["answer"])
