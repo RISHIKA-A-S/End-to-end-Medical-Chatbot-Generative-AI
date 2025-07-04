@@ -76,6 +76,7 @@ PINECONE_INDEX_NAME=medical-chatbot-index
 
 
 ⚙️ How It Works
+
 PDFs are parsed and chunked into small contexts.
 
 Each chunk is embedded using HuggingFace models.
@@ -90,20 +91,26 @@ Context + user query is passed to the Ollama LLM (like mistral, llama3).
 
 A natural language answer is generated.
 
-📸 Screenshot
+
+![Image](https://github.com/user-attachments/assets/7301ec3e-b123-49f3-8a07-31e40db76f89)
+
 
 🧪 Example Queries
+
 "What are the symptoms of Type 2 diabetes?"
 
 "Explain the side effects of Metformin."
 
 "How does hypertension affect kidney function?"
 
+
 🔒 Disclaimer
 This project is for educational/demo purposes only. Not intended for actual clinical decision-making or diagnosis.
 
+
 📄 License
 This project is licensed under the MIT License.
+
 
 🤝 Contributing
 PRs, feedback, and issues are welcome! Let’s improve healthcare AI together.
