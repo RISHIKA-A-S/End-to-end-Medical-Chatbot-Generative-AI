@@ -41,35 +41,28 @@ cd End-to-End-Medical-Chatbot
 
 
 ✅ STEP 2: Set up the Environment
-bash
-Copy
-Edit
+```bash
+
 conda create -n medibot python=3.10 -y
 conda activate medibot
 
 
 ✅ STEP 3: Install Dependencies
-bash
-Copy
-Edit
+```bash
 pip install -r requirements.txt
 
 
 ✅ STEP 4: Set Environment Variables
 Create a .env file in the root directory with:
 
-env
-Copy
-Edit
+```bash
 PINECONE_API_KEY=your_pinecone_api_key
 PINECONE_ENVIRONMENT=your_pinecone_env
 PINECONE_INDEX_NAME=medical-chatbot-index
 
 
 🧾 Folder Structure
-graphql
-Copy
-Edit
+
 .
 ├── app.py                  # Flask Web App
 ├── ingest.py               # PDF Ingestion & Vectorization
