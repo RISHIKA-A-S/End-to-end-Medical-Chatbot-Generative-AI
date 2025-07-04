@@ -35,27 +35,26 @@ An intelligent **medical question-answering chatbot** built with:
 
 ✅ STEP 1: Clone the Repository
 
-```bash
 git clone https://github.com/<your-username>/End-to-End-Medical-Chatbot.git
 cd End-to-End-Medical-Chatbot
 
 
 ✅ STEP 2: Set up the Environment
-```bash
 
 conda create -n medibot python=3.10 -y
 conda activate medibot
 
 
 ✅ STEP 3: Install Dependencies
-```bash
+
 pip install -r requirements.txt
 
 
 ✅ STEP 4: Set Environment Variables
+
 Create a .env file in the root directory with:
 
-```bash
+
 PINECONE_API_KEY=your_pinecone_api_key
 PINECONE_ENVIRONMENT=your_pinecone_env
 PINECONE_INDEX_NAME=medical-chatbot-index
