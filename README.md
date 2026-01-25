@@ -33,10 +33,13 @@ An intelligent **medical question-answering chatbot** built with:
 
 ## 🧪 Setup Instructions (Run Locally)
 
+
 ✅ STEP 1: Clone the Repository
 
 git clone https://github.com/<your-username>/End-to-End-Medical-Chatbot.git
 cd End-to-End-Medical-Chatbot
+
+
 
 
 ✅ STEP 2: Set up the Environment
@@ -45,14 +48,19 @@ conda create -n medibot python=3.10 -y
 conda activate medibot
 
 
+
 ✅ STEP 3: Install Dependencies
 
 pip install -r requirements.txt
 
 
+
+
 ✅ STEP 4: Set Environment Variables
 
 Create a .env file in the root directory with:
+
+
 
 
 PINECONE_API_KEY=your_pinecone_api_key
@@ -73,6 +81,7 @@ PINECONE_INDEX_NAME=medical-chatbot-index
 ├── data/                   # Your PDF medical files
 ├── .env                    # Environment variables
 ├── requirements.txt
+
 
 
 ⚙️ How It Works
