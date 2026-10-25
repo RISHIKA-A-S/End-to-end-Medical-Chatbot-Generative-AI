@@ -350,8 +350,8 @@ This project is intended to be distributed under the MIT License. Include a `LIC
 
 **Your Name**
 
-- GitHub: [your-username](https://github.com/your-username)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/)
+- GitHub: [your-username](https://github.com/RISHIKA-A-S)
+
 
 ---
 
