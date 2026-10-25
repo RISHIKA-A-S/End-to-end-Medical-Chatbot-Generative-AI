@@ -350,7 +350,7 @@ This project is intended to be distributed under the MIT License. Include a `LIC
 
 **Your Name**
 
-- GitHub: [your-username](https://github.com/RISHIKA-A-S)
+- GitHub: [RISHIKA A S](https://github.com/RISHIKA-A-S)
 
 
 ---
